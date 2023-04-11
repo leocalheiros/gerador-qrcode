@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Gerador de QR CODE</title>
+    <script src="qrcode.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -15,12 +16,13 @@
                 <p>Cole a URL ou texto desejado: </p>
             </div>
             <div class="form">
-                <input type="text"  placeholder="Insira a URL" name="" id="inputValue">
-                <button id="btnValue" >Gerar QRCode</button>
+                <input type="text" placeholder="Insira a URL" name="" id="inputValue">
+                <button id="btnValue">Gerar QRCode</button>
             </div>
         </div>
         <div class="qr-code">
             <img src="" id="imgQrCode" alt="">
+            <input type="text" id="linkQrCode" readonly>
         </div>
     </div>
     <div class="icons">
